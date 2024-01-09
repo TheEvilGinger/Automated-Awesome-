@@ -1,0 +1,142 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Resources:
+  # DynamoDB Table
+  CustomerInformationTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: CustomerInformationTable
+      AttributeDefinitions:
+        - AttributeName: customer_id
+          AttributeType: S
+      #  - AttributeName: first_name
+      #    AttributeType: S
+      #  - AttributeName: last_name
+      #    AttributeType: S
+      #  - AttributeName: email
+      #    AttributeType: S
+      #  - AttributeName: year
+      #    AttributeType: N
+      #  - AttributeName: make
+      #    AttributeType: S
+      KeySchema:
+        - AttributeName: customer_id
+          KeyType: HASH
+      ProvisionedThroughput:
+        ReadCapacityUnits: 5
+        WriteCapacityUnits: 5
+
+#
+#  # Lambda Layer for Dependencies
+#  DependenciesLayer:
+#    Type: AWS::Lambda::LayerVersion
+#    Properties:
+#      LayerName: DependenciesLayer
+#      Content:
+#        S3Bucket: myawesomedata
+#        S3Key: lambda_layer.zip
+#      CompatibleRuntimes:
+#        - python3.8
+#
+  # Save Customer Info Lambda Function
+  SaveCustomerInfoFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Handler: customer_info.lambda_handler
+      Role: !GetAtt SaveCustomerInfoFunctionRole.Arn
+      FunctionName: SaveCustomerInfoFunction
+      Runtime: python3.8
+      Timeout: 30
+      Code:
+        S3Bucket: myawesomedata
+        S3Key: lambda/customer_info.zip
+#      Layers:
+#        - !Ref DependenciesLayer
+      Environment:
+        Variables:
+          DYNAMODB_TABLE: !Ref CustomerInformationTable
+
+  SaveCustomerInfoFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: DynamoDBPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - dynamodb:PutItem
+                Resource: !GetAtt CustomerInformationTable.Arn
+
+  # SES Lambda Function
+  SendSESEmailFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Handler: ses_lambda.lambda_handler
+      Role: !GetAtt SendSESEmailFunctionRole.Arn
+      FunctionName: SendSESEmailFunction
+      Runtime: python3.8
+      Timeout: 30
+      Code:
+        S3Bucket: myawesomedata
+        S3Key: lambda/ses_lambda.zip
+#      Layers:
+#        - !Ref DependenciesLayer
+      Environment:
+        Variables:
+          SES_REGION: us-east-1
+          SES_SENDER_EMAIL: d11moore@yahoo.com  # Replace with your SES verified sender email
+
+  SendSESEmailFunctionRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - lambda.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      Policies:
+        - PolicyName: DynamoDBPolicy
+          PolicyDocument:
+            Version: '2012-10-17'
+            Statement:
+              - Effect: Allow
+                Action:
+                  - dynamodb:GetItem
+                  - dynamodb:Query
+                Resource: !GetAtt CustomerInformationTable.Arn
+              - Effect: Allow
+                Action:
+                  - ses:SendEmail
+                Resource: "*"
+
+  # SES Lambda Function CloudWatch Events Rule
+  EmailNotificationRule:
+    Type: AWS::Events::Rule
+    Properties:
+      ScheduleExpression: 'rate(15 minutes)'
+      Targets:
+        - Arn: !GetAtt SendSESEmailFunction.Arn
+          Id: 'SendSESEmailNotification'
+
+  EmailNotificationPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: 'lambda:InvokeFunction'
+      FunctionName: !GetAtt SendSESEmailFunction.Arn
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt EmailNotificationRule.Arn

@@ -1,0 +1,66 @@
+<mxfile host="app.diagrams.net" modified="2023-11-16T00:55:14.952Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="FBf5BhZK1NOJv_j6UbZf" version="21.6.8" type="device">
+  <diagram name="Page-1" id="MkljYc-YyHGdBVYhd7IP">
+    <mxGraphModel dx="3468" dy="1893" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Oduxze_nac7bNfnkiHdX-5" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1640" y="-1040" width="470" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Oduxze_nac7bNfnkiHdX-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-1140" y="-961.735" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-6" value="Contact us website" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.s3;fillColor=#E05243;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1584.25" y="-990" width="46.5" height="56.53" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.131;entryY=0.366;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Oduxze_nac7bNfnkiHdX-8" target="Oduxze_nac7bNfnkiHdX-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-8" value="Amplify Checkin service" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F54749;gradientDirection=north;fillColor=#C7131F;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.amplify;" vertex="1" parent="1">
+          <mxGeometry x="-1595" y="-780" width="68" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-10" value="Awessome Car Service Website" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1465" y="-1040" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.048;entryY=0.643;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Oduxze_nac7bNfnkiHdX-11" target="Oduxze_nac7bNfnkiHdX-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-11" value="Amplify API for Lambda function" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.api_gateway;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1130" y="-780" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Oduxze_nac7bNfnkiHdX-12" target="Oduxze_nac7bNfnkiHdX-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-12" value="Contact API for lambda function" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.api_gateway;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1130" y="-1026.47" width="76.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Oduxze_nac7bNfnkiHdX-17" target="Oduxze_nac7bNfnkiHdX-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.48;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Oduxze_nac7bNfnkiHdX-17" target="Oduxze_nac7bNfnkiHdX-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-17" value="Amplify Lambda" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" vertex="1" parent="1">
+          <mxGeometry x="-928" y="-785" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Oduxze_nac7bNfnkiHdX-18" target="Oduxze_nac7bNfnkiHdX-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-18" value="Contact us lambda" style="sketch=0;points=[[0,0,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0,0],[0,1,0],[0.25,1,0],[0.5,1,0],[0.75,1,0],[1,1,0],[0,0.25,0],[0,0.5,0],[0,0.75,0],[1,0.25,0],[1,0.5,0],[1,0.75,0]];outlineConnect=0;fontColor=#232F3E;gradientColor=#F78E04;gradientDirection=north;fillColor=#D05C17;strokeColor=#ffffff;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;shape=mxgraph.aws4.resourceIcon;resIcon=mxgraph.aws4.lambda;" vertex="1" parent="1">
+          <mxGeometry x="-940" y="-1018.97" width="78" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-21" value="Awesome database for customer Information" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.dynamo_db;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-690" y="-786.5" width="72" height="81" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-23" value="Email confirmation of User information" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ses;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-693.75" y="-630" width="79.5" height="93" as="geometry" />
+        </mxCell>
+        <mxCell id="Oduxze_nac7bNfnkiHdX-24" value="Email to the repair shop of a repair question&lt;br&gt;&lt;br&gt;&amp;nbsp;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ses;fillColor=#D9A741;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-710" y="-1026.47" width="79.5" height="93" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

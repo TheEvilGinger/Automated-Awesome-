@@ -1,0 +1,81 @@
+<mxfile host="app.diagrams.net" modified="2023-11-16T02:27:54.431Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36" etag="0BQ1bWFfBguXpH4HmCqZ" version="21.6.8" type="device">
+  <diagram name="Page-1" id="ocNyU9h-3YAkAHMfHksv">
+    <mxGraphModel dx="2105" dy="1734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-34" value="Contact Information Entered" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ia04AwvbzuUxVsjqD7X7-28" target="ia04AwvbzuUxVsjqD7X7-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="80" y="101" />
+              <mxPoint x="191" y="101" />
+              <mxPoint x="191" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-35" value="Customer Check-in Information&amp;nbsp;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ia04AwvbzuUxVsjqD7X7-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-28" value="The Customer" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-36" value="SES Lambda" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ia04AwvbzuUxVsjqD7X7-37" target="ia04AwvbzuUxVsjqD7X7-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-37" value="Static Website hosted by S3" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-46" value="Check-in info sent as JSON" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ia04AwvbzuUxVsjqD7X7-38" target="ia04AwvbzuUxVsjqD7X7-40">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-38" value="Amplify Hosted Web Forum&amp;nbsp;" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ia04AwvbzuUxVsjqD7X7-39" target="ia04AwvbzuUxVsjqD7X7-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-39" value="API Gateway" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ia04AwvbzuUxVsjqD7X7-40" target="ia04AwvbzuUxVsjqD7X7-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-40" value="API Gateway" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="ia04AwvbzuUxVsjqD7X7-42" target="ia04AwvbzuUxVsjqD7X7-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ia04AwvbzuUxVsjqD7X7-42" target="ia04AwvbzuUxVsjqD7X7-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-52" value="Email Sent to Customer Confirming Checkin&amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="ia04AwvbzuUxVsjqD7X7-51">
+          <mxGeometry x="0.3632" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-42" value="Lambda Updates the DB" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-43" value="Database of Customers and their information" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="230" width="100" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-53" value="Customer contact Info is sent in JSON format" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-54" value="Customer info is passed as JSON to a lambda" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="10" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="ia04AwvbzuUxVsjqD7X7-56" value="Check-in Information is passed to a lambda" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="700" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
